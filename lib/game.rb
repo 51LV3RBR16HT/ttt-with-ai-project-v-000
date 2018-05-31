@@ -21,11 +21,11 @@ class Game
     @board = board
   end
 
-  def start
-    puts "Welcome to Tic Tac Toe."
-    play
-    @board.display
-  end
+  # def start
+  #   puts "Welcome to Tic Tac Toe."
+  #   play
+  #   @board.display
+  # end
 
   def current_player
     @board.turn_count.even? ? player_1 : player_2
