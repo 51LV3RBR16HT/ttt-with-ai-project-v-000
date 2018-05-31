@@ -9,5 +9,7 @@ module Players
 
 end
 # This is where the AI goes.
-# if board valid_move
+
 # build out this class
+
+# if board valid_move
