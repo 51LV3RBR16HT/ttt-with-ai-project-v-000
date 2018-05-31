@@ -37,7 +37,7 @@ class Game
       game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new)
       game
     end
-      game.play
+    game.play
   end
 
   def current_player
@@ -87,6 +87,5 @@ class Game
       puts "Congratulations #{winner}!"
      end
    end
-
 
 end
