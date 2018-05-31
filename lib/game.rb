@@ -21,24 +21,24 @@ class Game
     @board = board
   end
 
-  def call
-    puts "Welcome to Tic Tac Toe,"
-    puts "Please choose 1. Player vs Player 2. Player vs Computer or 3. Computer vs Computer"
-
-    user_input = gets.strip
-
-    if user_input == "1"
-      game = Game.new()
-      game.board.display
-    elsif user_input == "2"
-      game = Game.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new)
-      game
-    else
-      game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new)
-      game
-    end
-    game.play
-  end
+  # def call
+  #   puts "Welcome to Tic Tac Toe,"
+  #   puts "Please choose 1. Player vs Player 2. Player vs Computer or 3. Computer vs Computer"
+  #
+  #   user_input = gets.strip
+  #
+  #   if user_input == "1"
+  #     game = Game.new()
+  #     game.board.display
+  #   elsif user_input == "2"
+  #     game = Game.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new)
+  #     game
+  #   else
+  #     game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new)
+  #     game
+  #   end
+  #   game.play
+  # end
 
   def current_player
     @board.turn_count.even? ? player_1 : player_2
