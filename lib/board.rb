@@ -11,7 +11,7 @@ class Board
   end
 
   def display
-    puts "1#{cells[0]} |2#{cells[1]} |3#{cells[2]} "
+    puts " 1#{cells[0]}| 2#{cells[1]}| 3#{cells[2]}"
     puts "-----------"
     puts " #{cells[3]} | #{cells[4]} | #{cells[5]} "
     puts "-----------"
