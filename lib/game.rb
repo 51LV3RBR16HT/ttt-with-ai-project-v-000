@@ -2,7 +2,7 @@ require 'pry'
 
 class Game
 
-  attr_accessor :board, :player_1, :player_2
+  attr_accessor :board, :player_1, :player_2:, :wargames
 
   WIN_COMBINATIONS = [
     [0,1,2],
@@ -73,7 +73,7 @@ class Game
 
    def wargames
      display.board
-     puts "hello"
+
      @counter = 0
       x = 0
       o = 0
