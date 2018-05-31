@@ -69,8 +69,8 @@ class Game
   end
 
   def play
-    until over?
-      turn
+    tuen until over?
+
       end
     if draw?
       puts "Cat's Game!"
