@@ -13,6 +13,7 @@ class TicTacToeCLI
   print c
   end
 end
+end
 
 
   # def initialize
