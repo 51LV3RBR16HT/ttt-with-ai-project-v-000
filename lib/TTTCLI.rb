@@ -3,6 +3,7 @@ class TTTCLI
 def call
   puts "Welcome to Tic Tac Toe!"
   puts "Please choose:
+  
   [1] Player vs Player
   [2] Player vs Computer
   [3] Computer vs Computer"
