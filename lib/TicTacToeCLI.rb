@@ -16,6 +16,7 @@ class TicTacToeCLI
 
     if input == "2"
       Game.new(Players::Human.new("X"), Players::Human.new("O"), Board.new).play
+      @board.display
     end
     #   Game.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new).play
     # else
