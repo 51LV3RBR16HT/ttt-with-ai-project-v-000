@@ -12,9 +12,9 @@ def call
   elsif input == "2"
     game = Game.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new)
     game
-  elsif input == "3"
-    game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new)
-    game
+  # elsif input == "3"
+  #   game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new)
+  #   game
   else input == "wargames"
     game = Game.new(Player::Computer.new("X"), Player::Computer.new("O"), Board.new, true).wargames
   end
