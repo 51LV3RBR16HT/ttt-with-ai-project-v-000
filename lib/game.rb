@@ -73,6 +73,7 @@ class Game
 
    def wargames
      display.board
+     puts "hello"
      @counter = 0
       x = 0
       o = 0
