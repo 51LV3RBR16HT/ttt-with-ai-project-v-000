@@ -12,25 +12,6 @@ class TicTacToeCLI
     "Please choose the following: 0, 1, or 2 players.\r\n".each_char do |c| sleep 0.1
       print c
     end
-    player = gets.strip 
+    player = gets.strip
   end
 end
-
-
-  # def initialize
-  # end
-
-  # def call
-      # input = ""
-      # while input != "exit"
-
-    # input = gets.strip
-
-
-
-
-    # player_1=Players::Computer.new("X")
-    # player_2=Players::Computer.new("O")
-
-    # end
-  # end
