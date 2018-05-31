@@ -69,32 +69,5 @@ class Game
       puts "Congratulations #{winner}!"
      end
    end
-
-   def wargames
-     display.board
-
-     @counter = 0
-      x = 0
-      o = 0
-      draw = 0
-    until @counter == 100
-      @counter += 1
-      play
-      if draw?
-        draw += 1
-      elsif winner == "X"
-        x += 1
-      elsif winner == "O"
-        o += 1
-      end
-      puts "A STRANGE GAME. THE ONLY WINNING MOVE IS NOT TO PLAY."
-      puts "HOW ABOUT A NICE GAME OF CHESS?"
-      # sleep(@timer*1.5)
-      # @timer -= (@timer/3)
-      # end
-
-  end
-
-end
-puts "test"
+   
 end
