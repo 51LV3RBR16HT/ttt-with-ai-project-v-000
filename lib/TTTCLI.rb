@@ -1,7 +1,7 @@
 class TTTCLI
 
 def call
-  "Welcome to Tic Tac Toe!
+  puts "Welcome to Tic Tac Toe!
   Please choose:
 
   [1] Player vs Player
