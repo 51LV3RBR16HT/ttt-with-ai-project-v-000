@@ -25,12 +25,12 @@ class Game
     puts "Welcome to Tic Tac Toe,"
     puts "Please choose 1. Player vs Player 2. Player vs Computer or 3. Computer vs Computer"
 
-    input = gets.strip
+    user_input = gets.strip
 
-    if input == "1"
+    if user_input == "1"
       game = Game.new()
       game.board.display
-    elsif input == "2"
+    elsif user_input == "2"
       game = Game.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new)
       game
     else
