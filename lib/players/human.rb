@@ -4,10 +4,10 @@ module Players
     def move(board)
 
       puts "Please make your selection."
-
+        board.display
         input = gets
         input
-        board.display
+
       end
     end
 end
