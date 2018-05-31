@@ -69,7 +69,7 @@ class Game
   end
 
   def play
-    tuen until over?
+    turn until over?
 
       end
     if draw?
