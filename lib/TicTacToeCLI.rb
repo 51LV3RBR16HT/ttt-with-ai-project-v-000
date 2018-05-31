@@ -2,7 +2,7 @@ class TicTacToeCLI
 
 
   def call
-    puts "Let's play Tic Tac Toe!"
+    puts "Let's play Tic Tac Toe!  Please choose how many players: 0, 1, 2."
 
     input = gets.strip
 
