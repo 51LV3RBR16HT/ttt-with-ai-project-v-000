@@ -16,7 +16,7 @@ def call
     game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new)
     game
   else input == "wargames"
-    game = Game.new(Player::Computer.new("X"), Player::Computer.new("O"), Board.new, wargames = true).wargames
+    game = Game.new(Player::Computer.new("X"), Player::Computer.new("O"), Board.new, true).wargames
   end
     game.play
   end
