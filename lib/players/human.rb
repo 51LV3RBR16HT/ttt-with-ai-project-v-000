@@ -5,6 +5,7 @@ module Players
       puts "Please make your selection."
         input = gets
         input
+        @board.display
       end
     end
 
