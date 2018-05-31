@@ -1,8 +1,8 @@
 module Players
    class Computer < Player
-     
+
       attr_accessor :winning_combos
-        
+
       WIN_COMBO = [
         [0,1,2],
         [3,4,5],
@@ -13,7 +13,7 @@ module Players
         [0,4,8],
         [2,4,6]
   ]
-        
+
     def move(board)
       num = '5'
         if  board.valid_move?(num)
@@ -26,30 +26,23 @@ module Players
             output
         else
           corner_check(board)
-          num = 1 + rand(9) 
+          num = 1 + rand(9)
           board.valid_move?(num) ? num.to_s : move(board)
         end
       end
 
-    
-
     def corner_check(board)
-       corner = [0,2,6,8]
-        corner.find do |num| 
-          board.cells[num] == " "
-          # binding.pry
-          (num+1).to_s
-        end
-    end        
-  
-  
-    
+      corner = [0,2,6,8]
+      corner.find do |num|
+      board.cells[num] == " "
+      (num+1).to_s
+      end
+    end
+
     def win_array_check(board)
      WIN_COMBO.find do |combo|
         (board.cells[combo[0]] == board.cells[combo[1]] || board.cells[combo[1]] == board.cells[combo[2]] || board.cells[combo[0]] == board.cells[combo[2]]) && ([board.cells[combo[0]], board.cells[combo[1]], board.cells[combo[2]]].select { |a| a == " "}.length == 1)
       end
-    end  
-    
-    
-  end  
+    end
+  end
 end
