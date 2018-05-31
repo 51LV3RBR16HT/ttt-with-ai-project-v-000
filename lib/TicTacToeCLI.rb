@@ -1,7 +1,7 @@
 class TicTacToeCLI
 
-  def initialize
-  end
+  # def initialize
+  # end
 
   def call
       input = ""
@@ -24,7 +24,7 @@ class TicTacToeCLI
 
     # player_1=Players::Computer.new("X")
     # player_2=Players::Computer.new("O")
-  
+
     end
   end
 
