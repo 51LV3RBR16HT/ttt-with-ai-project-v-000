@@ -54,8 +54,6 @@ class Game
   def turn
     player = current_player
     current_move = player.move(board)
-    puts "Game #{@counter}" if @wargame
-     board.display
     if !@board.valid_move?(current_move)
       turn
     else
@@ -99,7 +97,7 @@ class Game
       # end
 
   end
-  
+
 end
 puts "test"
 end
