@@ -71,6 +71,7 @@ class Game
    end
 
    def wargames
+     display.board
      @counter = 0
       x = 0
       o = 0
