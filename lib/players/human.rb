@@ -7,7 +7,7 @@ module Players
         input
 
       end
-      @board.display
-    end
 
+    end
+    @board.display
 end
