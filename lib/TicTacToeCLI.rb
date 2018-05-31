@@ -1,7 +1,7 @@
 class TicTacToeCLI
 
-  # def initialize
-  # end
+  def initialize
+  end
 
   def call
       input = ""
