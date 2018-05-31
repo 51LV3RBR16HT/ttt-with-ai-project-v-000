@@ -59,6 +59,8 @@ class Game
     else
       @board.update(current_move, player)
     end
+    puts "Game #{@counter}" if @wargames
+    board.display
   end
 
   def play
