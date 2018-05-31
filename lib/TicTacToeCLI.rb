@@ -1,7 +1,7 @@
 class TicTacToeCLI
 
-  def initialize
-  end
+  # def initialize
+  # end
 
   def call
       input = ""
@@ -17,16 +17,15 @@ class TicTacToeCLI
       "Please enter 0, 1, or 2 players.\r\n".each_char do |c| sleep 0.1
       print c
     end
-
     input = gets.strip
-    if input == 0
+
+
+
 
     # player_1=Players::Computer.new("X")
     # player_2=Players::Computer.new("O")
     end
     end
   end
-
-
 
 end
