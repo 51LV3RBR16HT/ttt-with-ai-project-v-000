@@ -1,7 +1,5 @@
 class TicTacToeCLI
 
-  def initialize
-  end
 
   def call
     puts "Let's play Tic Tac Toe!  Please choose how many players: 0, 1, 2."
