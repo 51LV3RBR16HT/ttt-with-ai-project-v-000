@@ -17,9 +17,9 @@ module Players
     def move(board)
       num = "5"
         if  board.valid_move?(num)
-              board.valid_move?(num) ? num.to_s : move(board)
+            board.valid_move?(num) ? num.to_s : move(board)
         elsif win_array_check(board)
-              output = ''
+              output = ""
               win_array_check(board).each do |num|
         if board.valid_move?(num+1) then output = (num+1).to_s end
         end
