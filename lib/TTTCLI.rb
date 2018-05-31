@@ -1,8 +1,8 @@
 class CLI
 
 def call
-  puts "Welcome to Vane's Tic-Tac_toe!!!"
-  puts 'Do you want to play 1. Player vs Player 2. Player vs Computer or 3. Computer vs Computer'
+  puts "Welcome to Tic Tac Toe,"
+  puts "Please choose 1. Player vs Player 2. Player vs Computer or 3. Computer vs Computer"
   # puts 'Please enter game.new(player, player, board), game.new(player, computer, board) or game.new(computer, computer, board)
   answer = gets.strip
 
