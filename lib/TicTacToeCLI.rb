@@ -2,7 +2,7 @@ class TicTacToeCLI
 
 
   def call
-    "Let's play Tic Tac Toe!"
+    puts "Let's play Tic Tac Toe!"
 
     input = gets.strip
 
@@ -11,7 +11,7 @@ class TicTacToeCLI
     end
 
 
-        
+
   end
 
 
