@@ -64,6 +64,8 @@ class Game
   end
 
   def play
+    board.reset!
+    system("clear")
     puts "Game #{@counter}" if @wargames
     board.display
     turn until over?
