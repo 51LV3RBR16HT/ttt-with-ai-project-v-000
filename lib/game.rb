@@ -70,7 +70,6 @@ class Game
 
   def play
     turn until over?
-
     if draw?
       puts "Cat's Game!"
     else won?
