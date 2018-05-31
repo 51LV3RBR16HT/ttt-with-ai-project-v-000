@@ -15,15 +15,15 @@ module Players
   ]
 
     def move(board)
-      num = '5'
+      num = "5"
         if  board.valid_move?(num)
-            board.valid_move?(num) ? num.to_s : move(board)
+              board.valid_move?(num) ? num.to_s : move(board)
         elsif win_array_check(board)
-            output = ''
-                win_array_check(board).each do |num|
+              output = ''
+              win_array_check(board).each do |num|
         if board.valid_move?(num+1) then output = (num+1).to_s end
         end
-            output
+          output
         else
           corner_check(board)
           num = 1 + rand(9)
@@ -45,5 +45,5 @@ module Players
       end
     end
   end
-  
+
 end
