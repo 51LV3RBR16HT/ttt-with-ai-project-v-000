@@ -1,6 +1,7 @@
 class TTTCLI
 
 def call
+  
   puts "Welcome to Tic Tac Toe!
 
   Please choose:
