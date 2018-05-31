@@ -29,6 +29,6 @@ end
     # player_2=Players::Computer.new("O")
 
     # end
-  end
+  # end
 
 end
