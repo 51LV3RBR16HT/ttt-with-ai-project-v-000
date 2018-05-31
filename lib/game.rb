@@ -62,14 +62,13 @@ class Game
   end
 
   def play
+    puts "Game #{@counter}" if @wargames
+    board.display
     turn until over?
     if draw?
       puts "Cat's Game!"
     elsif won?
       puts "Congratulations #{winner}!"
-    else @wargames
-      puts "Game #{@counter}"
-      board.display
      end
    end
 
