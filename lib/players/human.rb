@@ -4,7 +4,7 @@ module Players
     def move(board)
 
       puts "Please make your selection."
-      @board.display
+        board.display
         input = gets
         input
 
