@@ -15,6 +15,7 @@ module Players
   ]
 
     def move(board)
+      board.display
       num = "5"
         if  board.valid_move?(num)
             board.valid_move?(num) ? num.to_s : move(board)
