@@ -15,7 +15,7 @@ class TicTacToeCLI
     input = gets.strip
 
     if input == "2"
-      Game.new(Players::Human.new("X"), Players::Human.new("O"), Board.new).play
+      Game.new(Players::Human.new("X"), Players::Human.new("O"), Board.new).move
       @board.display
     end
     #   Game.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new).play
