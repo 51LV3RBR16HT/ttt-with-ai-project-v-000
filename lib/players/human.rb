@@ -7,9 +7,6 @@ module Players
         board.display
         input = gets
         input
-
       end
-
     end
-
 end
