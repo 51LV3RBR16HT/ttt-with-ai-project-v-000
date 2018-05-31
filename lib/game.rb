@@ -59,16 +59,17 @@ class Game
     else
       @board.update(current_move, player)
     end
-    puts "Game #{@counter}" if @wargames
-    board.display
   end
 
   def play
     turn until over?
     if draw?
       puts "Cat's Game!"
-    else won?
+    elsif won?
       puts "Congratulations #{winner}!"
+    else @wargames
+      puts "Game #{@counter}"
+      board.display
      end
    end
 
