@@ -1,5 +1,7 @@
 class TicTacToeCLI
 
+  def start
+
   "Greetings, Professor Falken.\r\n".each_char do |c| sleep 0.1
   print c
 end
@@ -8,14 +10,14 @@ end
   print c
 end
   sleep 1
-  "Please enter 0, 1, or 2 players.\r\n".each_char do |c| sleep 0.1
+  "Please choose the following: 0, 1, or 2 players.\r\n".each_char do |c| sleep 0.1
   print c
 end
 
   # def initialize
   # end
 
-  def call
+  # def call
       input = ""
       while input != "exit"
 
